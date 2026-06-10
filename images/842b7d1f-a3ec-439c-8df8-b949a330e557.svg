@@ -1,0 +1,1 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 100" class="absolute -top-5 left-0 size-full text-3xl fill-white"> <path id="curve" d="M 20,80 A 80,80 0 0,1 180,80" fill="transparent"></path> <text> <textPath href="#curve" startOffset="50%" text-anchor="middle">Play Video </textPath> </text> </svg>
