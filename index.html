@@ -1,67 +1,123 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+        <title>Atelier Taiwind</title>
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-    <title>Atelier Taiwind</title>
-</head>
+    <body class="bg-gray-100 font-['Red_Hat_Display',sans-serif]">
+        <!--en tête-->
+        <header class="relative min-h-screen p-6">
 
-<body class="bg-gray-300 font-['Red_Hat_Display',sans-serif]">
-    <!--en tête-->
-    <header class="relative min-h-screen p-6">
+            <!-- Image -->
+            <div
+                class="absolute inset-0 bg-[url('images/bg1.png')] bg-cover bg-center bg-fixed bg-no-repeat m-6 rounded-2xl">
+                <!--<img src="images/bg2.png.webp" class="bg-cover bg-no-repeat bg-center rounded-2xl" alt="">-->
+            </div>
 
-        <!-- Image -->
-        <div
-            class="absolute inset-0 bg-[url('images/bg1.png')] bg-cover bg-center bg-fixed bg-no-repeat m-6 rounded-2xl">
-            <!--<img src="images/bg2.png.webp" class="bg-cover bg-no-repeat bg-center rounded-2xl" alt="">-->
-        </div>
+            <!-- Overlay -->
+            <div class="absolute inset-0 bg-green-950/70 m-6 rounded-2xl">
+            </div>
 
-        <!-- Overlay -->
-        <div class="absolute inset-0 bg-green-950/70 m-6 rounded-2xl">
-        </div>
-
-        <!-- Contenu -->
-        <div class="relative z-10">
-            <!-- Navbar -->
-            <nav class="">
-                <div class="bg-green-950/70 rounded-2xl">
-                    <div class="max-lg:collapse lg:mb-48  w-full rounded-md">
-                        <input id="navbar-1-toggle" class="peer hidden" type="checkbox" />
-                        <label for="navbar-1-toggle" class="fixed inset-0 hidden max-lg:peer-checked:block"></label>
-                        <div class="collapse-title navbar lg:px-10">
-                            <div class="navbar-start flex justify-between">
-                                <a href="#">
-                                    <img src="images/logo-light.png" alt="logo">
-                                </a>
-                                <label for="navbar-1-toggle" class="btn btn-ghost lg:hidden text-white">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none"
-                                        viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M4 6h16M4 12h8m-8 6h16" />
-                                    </svg>
-                                </label>
+            <!-- Contenu -->
+            <div class="relative z-10">
+                <!-- Navbar -->
+                <nav class="">
+                    <div class="bg-green-950/70 rounded-2xl">
+                        <div class="max-lg:collapse lg:mb-48  w-full rounded-md">
+                            <input id="navbar-1-toggle" class="peer hidden" type="checkbox" />
+                            <label for="navbar-1-toggle" class="fixed inset-0 hidden max-lg:peer-checked:block"></label>
+                            <div class="collapse-title navbar lg:px-10">
+                                <div class="navbar-start flex justify-between">
+                                    <a href="#">
+                                        <img src="images/logo-light.png" alt="logo">
+                                    </a>
+                                    <label for="navbar-1-toggle" class="btn btn-ghost lg:hidden text-white">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none"
+                                            viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M4 6h16M4 12h8m-8 6h16" />
+                                        </svg>
+                                    </label>
+                                </div>
+                                <div class="navbar hidden lg:flex">
+                                    <ul class="menu menu-horizontal px-1 text-white text-xl">
+                                        <li>
+                                            <a href="#"
+                                                class="hover:text-[#B3E719] hover:border-b transition-all duration-100 delay-100 ease-in">Case
+                                                studies</a>
+                                        </li>
+                                        <li>
+                                            <details>
+                                                <summary
+                                                    class="hover:text-[#B3E719] hover:border-b transition-all duration-100 delay-100 ease-in">
+                                                    Pages</summary>
+                                                <ul class="p-2 bg-base-100 w-40 z-1 text-black">
+                                                    <li><button>Submenu 1</button></li>
+                                                    <li><button>Submenu 2</button></li>
+                                                </ul>
+                                            </details>
+                                        </li>
+                                        <li>
+                                            <details>
+                                                <summary
+                                                    class="hover:text-[#B3E719] hover:border-b transition-all duration-100 delay-100 ease-in">
+                                                    Services</summary>
+                                                <ul class="p-2 bg-base-100 w-40 z-1 text-black">
+                                                    <li><button>Submenu 1</button></li>
+                                                    <li><button>Submenu 2</button></li>
+                                                </ul>
+                                            </details>
+                                        </li>
+                                        <li>
+                                            <details>
+                                                <summary
+                                                    class="hover:text-[#B3E719] hover:border-b transition-all duration-100 delay-100 ease-in">
+                                                    Blog</summary>
+                                                <ul class="p-2 bg-base-100 w-40 z-1 text-black">
+                                                    <li><button>Submenu 1</button></li>
+                                                    <li><button>Submenu 2</button></li>
+                                                </ul>
+                                            </details>
+                                        </li>
+                                        <li>
+                                            <details>
+                                                <summary
+                                                    class="hover:text-[#B3E719] hover:border-b transition-all duration-100 delay-100 ease-in">
+                                                    Shop</summary>
+                                                <ul class="p-2 bg-base-100 w-40 z-1 text-black">
+                                                    <li><button>Submenu 1</button></li>
+                                                    <li><button>Submenu 2</button></li>
+                                                </ul>
+                                            </details>
+                                        </li>
+                                    </ul>
+                                    <!--icône telephone-->
+                                    <div class="flex gap-3">
+                                        <i class="bi bi-telephone text-green-500"></i>
+                                        <p class="text-white text-xl font-bold">+1 (123) 456-78-90</p>
+                                    </div>
+                                </div>
+                                <!--<div class="navbar-end">
+                                    <input type="text" placeholder="Search" class="input input-bordered w-64 lg:w-auto" />
+                                </div>-->
                             </div>
-                            <div class="navbar hidden lg:flex">
-                                <ul class="menu menu-horizontal px-1 text-white text-xl">
+
+                            <div class="collapse-content lg:hidden z-1">
+                                <ul class="menu text-white">
                                     <li>
-                                        <a href="#"
-                                            class="hover:text-[#B3E719] hover:border-b transition-all duration-100 delay-100 ease-in">Case
-                                            studies</a>
+                                        <a href="#">Case studies</a>
                                     </li>
                                     <li>
                                         <details>
-                                            <summary
-                                                class="hover:text-[#B3E719] hover:border-b transition-all duration-100 delay-100 ease-in">
-                                                Pages</summary>
+                                            <summary>Pages</summary>
                                             <ul class="p-2 bg-base-100 w-40 z-1 text-black">
                                                 <li><button>Submenu 1</button></li>
                                                 <li><button>Submenu 2</button></li>
@@ -70,9 +126,7 @@
                                     </li>
                                     <li>
                                         <details>
-                                            <summary
-                                                class="hover:text-[#B3E719] hover:border-b transition-all duration-100 delay-100 ease-in">
-                                                Services</summary>
+                                            <summary>Services</summary>
                                             <ul class="p-2 bg-base-100 w-40 z-1 text-black">
                                                 <li><button>Submenu 1</button></li>
                                                 <li><button>Submenu 2</button></li>
@@ -81,9 +135,7 @@
                                     </li>
                                     <li>
                                         <details>
-                                            <summary
-                                                class="hover:text-[#B3E719] hover:border-b transition-all duration-100 delay-100 ease-in">
-                                                Blog</summary>
+                                            <summary>Blog</summary>
                                             <ul class="p-2 bg-base-100 w-40 z-1 text-black">
                                                 <li><button>Submenu 1</button></li>
                                                 <li><button>Submenu 2</button></li>
@@ -92,9 +144,7 @@
                                     </li>
                                     <li>
                                         <details>
-                                            <summary
-                                                class="hover:text-[#B3E719] hover:border-b transition-all duration-100 delay-100 ease-in">
-                                                Shop</summary>
+                                            <summary>Shop</summary>
                                             <ul class="p-2 bg-base-100 w-40 z-1 text-black">
                                                 <li><button>Submenu 1</button></li>
                                                 <li><button>Submenu 2</button></li>
@@ -108,576 +158,652 @@
                                     <p class="text-white text-xl font-bold">+1 (123) 456-78-90</p>
                                 </div>
                             </div>
-                            <!--<div class="navbar-end">
-                                <input type="text" placeholder="Search" class="input input-bordered w-64 lg:w-auto" />
-                            </div>-->
                         </div>
-
-                        <div class="collapse-content lg:hidden z-1">
-                            <ul class="menu text-white">
-                                <li>
-                                    <a href="#">Case studies</a>
-                                </li>
-                                <li>
-                                    <details>
-                                        <summary>Pages</summary>
-                                        <ul class="p-2 bg-base-100 w-40 z-1 text-black">
-                                            <li><button>Submenu 1</button></li>
-                                            <li><button>Submenu 2</button></li>
-                                        </ul>
-                                    </details>
-                                </li>
-                                <li>
-                                    <details>
-                                        <summary>Services</summary>
-                                        <ul class="p-2 bg-base-100 w-40 z-1 text-black">
-                                            <li><button>Submenu 1</button></li>
-                                            <li><button>Submenu 2</button></li>
-                                        </ul>
-                                    </details>
-                                </li>
-                                <li>
-                                    <details>
-                                        <summary>Blog</summary>
-                                        <ul class="p-2 bg-base-100 w-40 z-1 text-black">
-                                            <li><button>Submenu 1</button></li>
-                                            <li><button>Submenu 2</button></li>
-                                        </ul>
-                                    </details>
-                                </li>
-                                <li>
-                                    <details>
-                                        <summary>Shop</summary>
-                                        <ul class="p-2 bg-base-100 w-40 z-1 text-black">
-                                            <li><button>Submenu 1</button></li>
-                                            <li><button>Submenu 2</button></li>
-                                        </ul>
-                                    </details>
-                                </li>
-                            </ul>
-                            <!--icône telephone-->
-                            <div class="flex gap-3">
-                                <i class="bi bi-telephone text-green-500"></i>
-                                <p class="text-white text-xl font-bold">+1 (123) 456-78-90</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Hero -->
-                    <div class="relative lg:px-20">
-                        <div class="gird grid-cols-1 lg:grid-cols-2">
-                            <!--texte-->
-                            <div>
-                                <button class="text-white p-3 border border-gray-400 bg-gray-300/40 rounded-xl">Take
-                                    Charge of Your Finances</button>
-                                <h1 class="text-white lg:flex lg:flex-col text-6xl">
-                                    <span>Proven consulting</span>
-                                    <span>for modern global</span>
-                                    <span>enterprises.</span>
-                                </h1>
-                                <div
-                                    class="mt-6 bg-white p-2 rounded-3xl w-fit flex justify-between items-center gap-5">
-                                    <a href="#" class="text-gray-500 ">
-                                        Free Consultation
-                                    </a>
-                                    <i
-                                        class="bi bi-arrow-up-right bg-[#B3E719] rounded-full h-8 w-8 flex items-center justify-center text-white"></i>
-                                </div>
-                                <!--info-->
-                                <div class="mt-6 w-fit lg:flex">
+                        <!-- Hero -->
+                        <div class="relative lg:px-20">
+                            <div class="gird grid-cols-1 lg:grid-cols-2">
+                                <!--texte-->
+                                <div>
+                                    <button class="text-white p-3 border border-gray-400 bg-gray-300/40 rounded-xl">Take
+                                        Charge of Your Finances</button>
+                                    <h1 class="text-white lg:flex lg:flex-col text-6xl">
+                                        <span>Proven consulting</span>
+                                        <span>for modern global</span>
+                                        <span>enterprises.</span>
+                                    </h1>
                                     <div
-                                        class="lg:flex gap-4 text-white bg-white/45 p-2 rounded-tl-xl border-t border-t-gray-300">
-                                        <h2 class="font-bold text-4xl">1M</h2>
-                                        <p class="lg:flex lg:flex-col">
-                                            <span>Overall Positive</span>
-                                            <span>Customer Feedback</span>
-                                        </p>
+                                        class="mt-6 bg-white p-2 rounded-3xl w-fit flex justify-between items-center gap-5">
+                                        <a href="#" class="text-gray-500 ">
+                                            Free Consultation
+                                        </a>
+                                        <i
+                                            class="bi bi-arrow-up-right bg-[#B3E719] rounded-full h-8 w-8 flex items-center justify-center text-white"></i>
                                     </div>
-                                    <div class="lg:flex gap-4 text-green-900 bg-[#B3E719] p-2 rounded-tr-xl">
-                                        <h2 class="font-bold text-4xl">18+</h2>
-                                        <p class="lg:flex lg:flex-col">
-                                            <span>Industrial Years of</span>
-                                            <span>Experiences</span>
-                                        </p>
+                                    <!--info-->
+                                    <div class="mt-6 w-fit lg:flex">
+                                        <div
+                                            class="lg:flex gap-4 text-white bg-white/45 p-2 rounded-tl-xl border-t border-t-gray-300">
+                                            <h2 class="font-bold text-4xl">1M</h2>
+                                            <p class="lg:flex lg:flex-col">
+                                                <span>Overall Positive</span>
+                                                <span>Customer Feedback</span>
+                                            </p>
+                                        </div>
+                                        <div class="lg:flex gap-4 text-green-900 bg-[#B3E719] p-2 rounded-tr-xl">
+                                            <h2 class="font-bold text-4xl">18+</h2>
+                                            <p class="lg:flex lg:flex-col">
+                                                <span>Industrial Years of</span>
+                                                <span>Experiences</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!--image-->
+                                <div class="absolute right-20 bottom-0">
+                                    <!--image-->
+                                    <img src="images/1.png" alt="" class="w-110">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <!--contenu-->
+        <main class="">
+            <!--section info-->
+            <section class="mt-10">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:px-10 p-5">
+                    <!--div texte-->
+                    <div class="">
+                        <h2 class="lg:flex lg:flex-col text-6xl font-normal text-green-900">
+                            <span>Meet Your Financial</span>
+                            <span>Partner in Growth</span>
+                        </h2>
+                        <p class="mt-5 text-gray-400 text-xl leading-normal">
+                            With over 18 years of experience helping businesses unlock financial clarity and growth, I bring
+                            personalized strategy, practical insights, and ongoing support. Whether you’re just starting out
+                            or scaling fast, I’m here to guide every step.
+                        </p>
+                        <div class="mt-5 grid grid-cols-1 lg:grid-cols-2 gap-6">
+                            <div class="bg-green-900 p-5 rounded-3xl">
+                                <div class="flex justify-between text-white">
+                                    <div>
+                                        <p>Revenue</p>
+                                        <p class="text-2xl font-semibold">$25.6 M</p>
+                                    </div>
+                                    <div>
+                                        <img src="images/favicon.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="mt-3 flex justify-between items-center text-white">
+                                    <p class="flex gap-2"><i class="bi bi-square-fill text-sm text-green-600"></i>Profit</p>
+                                    <p class="flex gap-2"><i class="bi bi-square-fill text-sm text-gray-400/30"></i>Profit</p>
+                                    <p class="text-green-500">+ 8.5 %</p>
+                                </div>
+                                <div class="grid grid-cols-5 lg:grid-cols-5 gap-3">
+                                    <div>
+                                        <div class="flex items-end gap-2 h-60">
+                                            <div class="w-3 h-10 bg-gray-400/30 rounded-t"></div>
+                                            <div class="w-3 h-20 bg-lime-400 rounded-t"></div>
+                                        </div>
+                                        <p class="text-gray-500 text-center">Sun</p>
+                                    </div>
+                                    <div>
+                                        <div class="flex items-end gap-2 h-60">
+                                            <div class="w-3 h-20 bg-gray-400/30 rounded-t"></div>
+                                            <div class="w-3 h-40 bg-lime-400 rounded-t"></div>
+                                        </div>
+                                        <p class="text-gray-500 text-center">Mon</p>
+                                    </div>
+                                    <div>
+                                        <div class="flex items-end gap-2 h-60">
+                                            <div class="w-3 h-20 bg-gray-400/30 rounded-t"></div>
+                                            <div class="w-3 h-40 bg-lime-400 rounded-t"></div>
+                                        </div>
+                                        <p class="text-gray-500 text-center">Tue</p>
+                                    </div>
+                                    <div>
+                                        <div class="flex items-end gap-2 h-60">
+                                            <div class="w-3 h-20 bg-gray-400/30 rounded-t"></div>
+                                            <div class="w-3 h-30 bg-lime-400 rounded-t"></div>
+                                        </div>
+                                        <p class="text-gray-500 text-center">Wed</p>
+                                    </div>
+                                    <div>
+                                        <div class="flex items-end gap-2 h-60">
+                                            <div class="w-3 h-10 bg-gray-400/30 rounded-t"></div>
+                                            <div class="w-3 h-20 bg-lime-400 rounded-t"></div>
+                                        </div>
+                                        <p class="text-gray-500 text-center">Thu</p>
                                     </div>
                                 </div>
                             </div>
+                            <!--grid col 2-->
+                            <div>
+                                <div class="text-center">
+                                    <h3 class="text-center bg-white rounded-full h-30 w-30 flex items-center justify-center text-6xl font-bold">18</h3>
+                                    <p class="mt-3 text-xl font-semibold">Introducing Our Financial Advisory Experts</p>
+                                </div>
+                                <!--membres-->
+                                <div class="mt-2 flex gap-5 items-center">
+                                    <div class="flex">
+                                        <img src="images/pic1.png" alt="" class="border-2 border-white rounded-full">
+                                        <img src="images/pic2.png" alt="" class="-ml-3 border-2 border-white rounded-full">
+                                        <img src="images/pic3.png" alt="" class="-ml-3 border-2 border-white rounded-full">
+                                    </div>
+                                    <div>
+                                        <p>25 +Members</p>
+                                    </div>
+                                </div>
+                                <hr class="mt-2 border-gray-500">
+                                <div class="mt-3">
+                                    <a href="#" class="bg-lime-400 p-2 rounded-full flex justify-center items-center gap-4 w-fit">More About <i class="bi bi-arrow-right bg-green-900 p-2 rounded-full w-8 h-8 flex justify-center items-center text-white"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-                            <!--image-->
-                            <div class="absolute right-20 bottom-0">
-                                <!--image-->
-                                <img src="images/1.png" alt="" class="w-110">
+                    <!--div image-->
+                    <div>
+                        <img src="images/1_5.png" alt="1_5" class="w-full h-100 object-cover rounded-2xl ">
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 mt-5">
+                            <div
+                                class="bg-white p-2 rounded-2xl flex gap-4 justify-start items-center text-green-950 font-medium">
+                                <i class="bi bi-check2 text-[#B3E719] text-xl font-bold"></i>
+                                <p>Expertise and experience</p>
+                            </div>
+                            <div
+                                class="bg-white p-2 rounded-2xl flex gap-4 justify-start items-center text-green-950 font-medium">
+                                <i class="bi bi-check2 text-[#B3E719] text-xl font-bold"></i>
+                                <p>Commitment excellences</p>
+                            </div>
+                            <div
+                                class="bg-white p-2 rounded-2xl flex gap-4 justify-start items-center text-green-950 font-medium">
+                                <i class="bi bi-check2 text-[#B3E719] text-xl font-bold"></i>
+                                <p>Client Centric approach</p>
+                            </div>
+                            <div
+                                class="bg-white p-2 rounded-2xl flex gap-4 justify-start items-center text-green-950 font-medium">
+                                <i class="bi bi-check2 text-[#B3E719] text-xl font-bold"></i>
+                                <p>Strategic planning</p>
                             </div>
                         </div>
                     </div>
                 </div>
-            </nav>
-        </div>
-    </header>
+            </section>
 
-    <!--contenu-->
-    <main class="">
-        <!--section info-->
-        <section class="mt-10">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:px-20 p-5">
-                <!--div texte-->
-                <div class="text-green-900">
-                    <h2 class="lg:flex lg:flex-col text-6xl font-normal">
-                        <span>Meet Your Financial</span>
-                        <span>Partner in Growth</span>
-                    </h2>
-                    <p class="mt-5 text-gray-400 text-xl leading-normal">
-                        With over 18 years of experience helping businesses unlock financial clarity and growth, I bring
-                        personalized strategy, practical insights, and ongoing support. Whether you’re just starting out
-                        or scaling fast, I’m here to guide every step.
-                    </p>
+            <!--service-->
+            <section class="lg:px-10 lg:mt-20">
+                <!--texte-->
+                <div class="lg:flex lg:justify-between items-center">
+                    <div class="text-4xl">
+                        <h2>
+                            Tailored <span class="text-lime-400">Consulting Services</span> To
+                            <br>
+                            Meet Your Business Needs
+                        </h2>
+                    </div>
+
+                    <a href="#" class="bg-white p-2 flex items-center gap-4 rounded-lg shadow w-fit">
+                        <span class="text-green-900">View All Services</span>
+                        <i
+                            class="bi bi-arrow-right bg-lime-400 text-green-950 p-3 w-10 h-10 flex items-center justify-center rounded-full"></i>
+                    </a>
                 </div>
 
-                <!--div image-->
-                <div>
-                    <img src="images/1_5.png" alt="1_5" class="w-full h-100 object-cover rounded-2xl">
-                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 mt-5">
-                        <div
-                            class="bg-white p-2 rounded-2xl flex gap-4 justify-start items-center text-green-950 font-medium">
-                            <i class="bi bi-check2 text-[#B3E719] text-xl font-bold"></i>
-                            <p>Expertise and experience</p>
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 lg:mt-10 mb-10">
+                    <div class="bg-white rounded-2xl">
+                        <div class="bg-white p-5 rounded-2xl flex gap-5 text-2xl items-center">
+                            <i class="bi bi-bar-chart-line text-4xl text-lime-400"></i>
+                            <a href="#">Financial Strategy and Planning</a>
                         </div>
-                        <div
-                            class="bg-white p-2 rounded-2xl flex gap-4 justify-start items-center text-green-950 font-medium">
-                            <i class="bi bi-check2 text-[#B3E719] text-xl font-bold"></i>
-                            <p>Commitment excellences</p>
+                        <div>
+                            <img src="images/1_6.png" alt="" class="w-full h-110">
                         </div>
-                        <div
-                            class="bg-white p-2 rounded-2xl flex gap-4 justify-start items-center text-green-950 font-medium">
-                            <i class="bi bi-check2 text-[#B3E719] text-xl font-bold"></i>
-                            <p>Client Centric approach</p>
-                        </div>
-                        <div
-                            class="bg-white p-2 rounded-2xl flex gap-4 justify-start items-center text-green-950 font-medium">
-                            <i class="bi bi-check2 text-[#B3E719] text-xl font-bold"></i>
-                            <p>Strategic planning</p>
+                        <div class="bg-white p-6 rounded-2xl">
+                            <p class="flex gap-5">
+                                <i class="bi bi-check-lg text-lime-400"></i>
+                                Business budgeting and forecasting
+                            </p>
+                            <p class="flex gap-5">
+                                <i class="bi bi-check-lg text-lime-400"></i>
+                                Financial roadmap development
+                            </p>
+                            <p class="flex gap-5">
+                                <i class="bi bi-check-lg text-lime-400"></i>
+                                Strategic goal setting
+                            </p>
                         </div>
                     </div>
-                </div>
-            </div>
-        </section>
 
-        <!--service-->
-        <section class="lg:px-20 lg:mt-20">
-            <!--texte-->
-            <div class="lg:flex lg:justify-between ">
-                <div class="text-4xl">
-                    <h2>Tailored <span class="text-green-500">Consulting Services</span>To <br>Meet Your Business Needs
-                    </h2>
-                </div>
-                <div class="bg-white p-2 gap-4 flex items-center rounded-lg shadow">
-                    <a href="#" class=" text-green-900 ">View All Services </a>
-                    <i
-                        class="bi bi-arrow-right bg-green-400 text-green-950 p-3 w-10 h-10 flex items-center justify-center rounded-full"></i>
-                </div>
-            </div>
+                    <div class="bg-white rounded-2xl">
+                        <div class="bg-white p-5 rounded-2xl flex gap-5 text-2xl items-center">
+                            <i class="bi bi-suitcase-lg text-4xl text-lime-400"></i>
+                            <p>
+                                Bookkeeping and Financial Oversight
+                            </p>
+                        </div>
+                        <div>
+                            <img src="images/2_1.png" alt="" class="w-full h-110">
+                        </div>
+                        <div class="bg-white p-5 rounded-2xl">
+                            <p class="flex gap-5">
+                                <i class="bi bi-check-lg text-lime-400"></i>
+                                Monthly/quarterly financial reviews
+                            </p>
+                            <p class="flex gap-5">
+                                <i class="bi bi-check-lg text-lime-400"></i>
+                                Bookkeeping audits and cleanup
+                            </p>
+                            <p class="flex gap-5">
+                                <i class="bi bi-check-lg text-lime-400"></i>
+                                Financial health checkups
+                            </p>
+                        </div>
+                    </div>
 
-            <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 lg:mt-10 mb-10">
-                <div class="bg-white rounded-2xl">
-                    <div class="bg-white p-5 rounded-2xl flex gap-5 text-2xl items-center">
-                        <i class="bi bi-bar-chart-line text-4xl"></i>
-                        <a href="#">Financial Strategy and Planning</a>
-                    </div>
-                    <div>
-                        <img src="images/1_6.png" alt="">
-                    </div>
-                    <div class="bg-white p-6 rounded-2xl">
-                        <p class="flex gap-5">
-                            <i class="bi bi-check-lg"></i>
-                            Business budgeting and forecasting
-                        </p>
-                        <p class="flex gap-5">
-                            <i class="bi bi-check-lg"></i>
-                            Financial roadmap development
-                        </p>
-                        <p class="flex gap-5">
-                            <i class="bi bi-check-lg"></i>
-                            Strategic goal setting
-                        </p>
-                    </div>
-                </div>
-
-                <div class="bg-white rounded-2xl">
-                    <div class="bg-white p-5 rounded-2xl flex gap-5 text-2xl items-center">
-                        <i class="bi bi-suitcase-lg text-4xl"></i>
-                        <p>
-                            Bookkeeping and Financial Oversight
-                        </p>
-                    </div>
-                    <div>
-                        <img src="images/2_1.png" alt="" class="w-full h-110">
-                    </div>
-                    <div class="bg-white p-5 rounded-2xl">
-                        <p class="flex gap-5">
-                            <i class="bi bi-check-lg"></i>
-                            Monthly/quarterly financial reviews
-                        </p>
-                        <p class="flex gap-5">
-                            <i class="bi bi-check-lg"></i>
-                            Bookkeeping audits and cleanup
-                        </p>
-                        <p class="flex gap-5">
-                            <i class="bi bi-check-lg"></i>
-                            Financial health checkups
-                        </p>
+                    <div class="bg-white rounded-2xl">
+                        <div class="bg-white p-5 rounded-2xl flex gap-5 text-2xl items-center">
+                            <i class="bi bi-person-lines-fill text-4xl text-lime-400"></i>
+                            <p>
+                                Business Advisory & Coaching
+                            </p>
+                        </div>
+                        <div>
+                            <img src="images/1_3.png" alt="" class="h-110 w-full">
+                        </div>
+                        <div class="bg-white p-5 rounded-2xl">
+                            <p class="flex gap-5">
+                                <i class="bi bi-check-lg text-lime-400"></i>
+                                Monthly 1:1 advisory sessions
+                            </p>
+                            <p class="flex gap-5">
+                                <i class="bi bi-check-lg text-lime-400"></i>
+                                Decision-making support
+                            </p>
+                            <p class="flex gap-5">
+                                <i class="bi bi-check-lg text-lime-400"></i>
+                                KPI tracking & analysis
+                            </p>
+                        </div>
                     </div>
                 </div>
+            </section>
 
-                <div class="bg-white rounded-2xl">
-                    <div class="bg-white p-5 rounded-2xl flex gap-5 text-2xl items-center">
-                        <i class="bi bi-person-lines-fill text-4xl"></i>
-                        <p>
-                            Business Advisory & Coaching
-                        </p>
-                    </div>
-                    <div>
-                        <img src="images/1_3.png" alt="" class="h-110 w-full">
-                    </div>
-                    <div class="bg-white p-5 rounded-2xl">
-                        <p class="flex gap-5">
-                            <i class="bi bi-check-lg"></i>
-                            Monthly 1:1 advisory sessions
-                        </p>
-                        <p class="flex gap-5">
-                            <i class="bi bi-check-lg"></i>
-                            Decision-making support
-                        </p>
-                        <p class="flex gap-5">
-                            <i class="bi bi-check-lg"></i>
-                            KPI tracking & analysis
-                        </p>
-                    </div>
+            <!--section teams-->
+            <section class="relative h-screen p-6">
+                <!-- Image -->
+                <div
+                    class="absolute inset-0 bg-[url('images/bg1.png')] bg-cover bg-center bg-fixed bg-no-repeat m-6 rounded-2xl">
+                    <!--<img src="images/bg2.png.webp" class="bg-cover bg-no-repeat bg-center rounded-2xl" alt="">-->
                 </div>
-            </div>
-        </section>
 
-        <!--section teams-->
-        <section class="relative h-screen p-6">
-            <!-- Image -->
-            <div
-                class="absolute inset-0 bg-[url('images/bg1.png')] bg-cover bg-center bg-fixed bg-no-repeat m-6 rounded-2xl">
-                <!--<img src="images/bg2.png.webp" class="bg-cover bg-no-repeat bg-center rounded-2xl" alt="">-->
-            </div>
+                <!-- Overlay -->
+                <div class="absolute inset-0 bg-green-950/70 m-6 rounded-2xl">
+                </div>
+                <!--contenu-->
+                <div class="relative z-10 p-10">
+                    <div class="flex justify-between items-center">
+                        <div>
+                            <h2 class="text-5xl text-white font-semibold">The Team Behind Your Success</h2>
+                            <div class="mt-10 flex gap-6 items-center bg-white p-1 w-fit  rounded-lg">
+                                <div class="flex">
+                                    <img src="images/pic1.png" alt="">
+                                    <img src="images/pic2.png" alt="" class="-ml-3">
+                                    <img src="images/pic3.png" alt="" class="-ml-3">
+                                </div>
+                                <div class="flex gap-3 items-center">
+                                    <a href="#">View All Members</a>
+                                    <i
+                                        class="bi bi-arrow-right w-8 h-8 rounded-full bg-lime-400 flex items-center justify-center"></i>
+                                </div>
 
-            <!-- Overlay -->
-            <div class="absolute inset-0 bg-green-950/70 m-6 rounded-2xl">
-            </div>
-            <!--contenu-->
-            <div class="relative z-10 p-10">
-                <div class="flex justify-between items-center">
-                    <div>
-                        <h2 class="text-5xl text-white font-semibold">The Team Behind Your Success</h2>
-                        <div class="mt-10 flex gap-6 items-center bg-white p-1 w-fit  rounded-lg">
-                            <div class="flex">
-                                <img src="images/pic1.png" alt="">
-                                <img src="images/pic2.png" alt="" class="-ml-3">
-                                <img src="images/pic3.png" alt="" class="-ml-3">
                             </div>
-                            <div class="flex gap-3 items-center">
-                                <a href="#">View All Members</a>
+                        </div>
+                        <!--contenu teams-->
+                        <div class="grid grid-cols-1 lg:grid-cols-3 gap-3 items-center mt-10">
+                            <div>
+                                <img src="images/1_2.png" alt="" class="rounded-2xl">
+                            </div>
+                            <div>
+                                <img src="images/2.png" alt="" class="rounded-2xl">
+                            </div>
+                            <div>
+                                <img src="images/3_2.png" alt="" class="rounded-2xl">
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" flex gap-3 justify-end items-center mt-10 ">
+                        <div
+                            class="border border-white px-15 p-2 flex justify-between items-center gap-5 shadow-xl shadow-gray-400 rounded-2xl">
+                            <div class="text-2xl text-white font-semibold">
+                                <p>Your Next Career Move Starts Here</p>
+                            </div>
+                            <div class="text-white font-semibold flex items-center gap-4">
+                                <p>Start With Us</p>
                                 <i
-                                    class="bi bi-arrow-right w-8 h-8 rounded-full bg-green-400 flex items-center justify-center"></i>
+                                    class="bi bi-arrow-right bg-lime-400 h-10 w-10 rounded-full flex items-center justify-center"></i>
                             </div>
-
                         </div>
                     </div>
-                    <!--contenu teams-->
-                    <div class="grid grid-cols-1 lg:grid-cols-3 gap-3 items-center mt-10">
-                        <div>
-                            <img src="images/1_2.png" alt="" class="rounded-2xl">
+                    <!--<p class="text-6xl flex justify-end">,nnbnb b bjvbc</p>-->
+                </div>
+            </section>
+
+            <!--section image et accordion-->
+            <section class="mt-20 lg:px-10 mb-5">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-5">
+                    <div>
+                        <img src="images/1_3.png" alt="1_3">
+                    </div>
+
+                    <div>
+                        <h2 class="text-5xl mb-3">Got Questions? We've Got Answers</h2>
+                        <p class="text-2xl">We have professional experts around world.</p>
+                        <!--accordion-->
+                        <div class="collapse collapse-arrow bg-base-100 border border-base-300 mt-10 mb-2">
+                            <input type="radio" name="my-accordion-2" checked="checked" />
+                            <div class="collapse-title font-semibold text-lime-400 text-xl">What does a business financial
+                                consultant do?</div>
+                            <div class="collapse-content text-lg">
+                                Both! You can book a one-time strategy session or choose a monthly support package for
+                                continuous guidance.
+                            </div>
                         </div>
-                        <div>
-                            <img src="images/2.png" alt="" class="rounded-2xl">
+                        <div class="collapse collapse-arrow bg-base-100 border border-base-300 mb-2">
+                            <input type="radio" name="my-accordion-2" />
+                            <div class="collapse-title font-semibold text-lime-400 text-xl">Who do you work with?</div>
+                            <div class="collapse-content text-lg">Both! You can book a one-time strategy session or choose a
+                                monthly support package for continuous guidance.
+                            </div>
                         </div>
-                        <div>
-                            <img src="images/3_2.png" alt="" class="rounded-2xl">
+                        <div class="collapse collapse-arrow bg-base-100 border border-base-300 mb-2">
+                            <input type="radio" name="my-accordion-2" />
+                            <div class="collapse-title font-semibold text-lime-400 text-xl">Do you offer one-time
+                                consultations or ongoing support?</div>
+                            <div class="collapse-content text-lg">Both! You can book a one-time strategy session or choose a
+                                monthly support package for continuous guidance.
+                            </div>
+                        </div>
+                        <div class="collapse collapse-arrow bg-base-100 border border-base-300 ">
+                            <input type="radio" name="my-accordion-2" />
+                            <div class="collapse-title font-semibold text-lime-400 text-xl">Can you help if my books are a
+                                mess?</div>
+                            <div class="collapse-content text-lg">Both! You can book a one-time strategy session or choose a
+                                monthly support package for continuous guidance.
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class=" flex gap-3 justify-end items-center mt-10 ">
-                    <div
-                        class="border border-white px-15 p-2 flex justify-between items-center gap-5 shadow-xl shadow-gray-400 rounded-2xl">
-                        <div class="text-2xl text-white font-semibold">
-                            <p>Your Next Career Move Starts Here</p>
-                        </div>
-                        <div class="text-white font-semibold flex items-center gap-4">
-                            <p>Start With Us</p>
-                            <i
-                                class="bi bi-arrow-right bg-green-400 h-10 w-10 rounded-full flex items-center justify-center"></i>
-                        </div>
-                    </div>
-                </div>
-                <!--<p class="text-6xl flex justify-end">,nnbnb b bjvbc</p>-->
-            </div>
-        </section>
+            </section>
 
-        <!--section image et accordion-->
-        <section class="mt-20 lg:px-20 mb-5">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-5">
-                <div>
-                    <img src="images/1_3.png" alt="1_3">
-                </div>
+            <!--section info2-->
+            <section class="mt-10 lg:px-10">
+                <!-- Titre -->
+                <div class="text-center mb-10">
+                    <h2 class="text-5xl font-semibold">
+                        Success Stories: How Feedback
+                        <br>
+                        Fuels Our Growth
+                    </h2>
 
-                <div>
-                    <h2 class="text-5xl mb-3">Got Questions? We've Got Answers</h2>
-                    <p class="text-2xl">We have professional experts around world.</p>
-                    <!--accordion-->
-                    <div class="collapse collapse-arrow bg-base-100 border border-base-300 mt-10 mb-2">
-                        <input type="radio" name="my-accordion-2" checked="checked" />
-                        <div class="collapse-title font-semibold text-green-400 text-xl">What does a business financial
-                            consultant do?</div>
-                        <div class="collapse-content text-lg">
-                            Both! You can book a one-time strategy session or choose a monthly support package for
-                            continuous guidance.
-                        </div>
-                    </div>
-                    <div class="collapse collapse-arrow bg-base-100 border border-base-300 mb-2">
-                        <input type="radio" name="my-accordion-2" />
-                        <div class="collapse-title font-semibold text-green-400 text-xl">Who do you work with?</div>
-                        <div class="collapse-content text-lg">Both! You can book a one-time strategy session or choose a
-                            monthly support package for continuous guidance.
-                        </div>
-                    </div>
-                    <div class="collapse collapse-arrow bg-base-100 border border-base-300 mb-2">
-                        <input type="radio" name="my-accordion-2" />
-                        <div class="collapse-title font-semibold text-green-400 text-xl">Do you offer one-time
-                            consultations or ongoing support?</div>
-                        <div class="collapse-content text-lg">Both! You can book a one-time strategy session or choose a
-                            monthly support package for continuous guidance.
-                        </div>
-                    </div>
-                    <div class="collapse collapse-arrow bg-base-100 border border-base-300 ">
-                        <input type="radio" name="my-accordion-2" />
-                        <div class="collapse-title font-semibold text-green-400 text-xl">Can you help if my books are a
-                            mess?</div>
-                        <div class="collapse-content text-lg">Both! You can book a one-time strategy session or choose a
-                            monthly support package for continuous guidance.
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!--section info2-->
-        <section class="mt-10 lg:px-20">
-            <!-- Titre -->
-            <div class="text-center mb-10">
-                <h2 class="text-5xl font-semibold">
-                    Success Stories: How Feedback
-                    <br>
-                    Fuels Our Growth
-                </h2>
-
-                <button class="mt-8 bg-green-500 text-white px-6 py-3 rounded-full">
-                    Plexify is rated 4.5 / 5 average from 200 reviews on Google,
-                    Clutch!
-                </button>
-            </div>
-
-            <!-- Cartes -->
-            <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
-                <!-- Carte verte -->
-                <div class="bg-green-900 text-white rounded-2xl p-10 flex flex-col justify-between">
-                    <div class="text-center">
-                        <h3 class="text-7xl font-light">4.5</h3>
-
-                        <p class="flex justify-center items-center gap-2 mt-3">
-                            Star Rating
-                            <img src="images/trustpilot-logo.png" alt="" class="h-6">
-                        </p>
-                    </div>
-
-                    <div class="text-center my-12">
-                        <p class="text-4xl font-semibold">
-                            10 Years Experience in
-                            Digital Marketing
-                        </p>
-                    </div>
-
-                    <button class="bg-white text-green-900 rounded-full py-3 px-4 flex items-center justify-between">
-                        <span>Rate Us on Trustpilot</span>
-
-                        <span class="bg-lime-400 w-12 h-12 rounded-full flex items-center justify-center">
-                            <i class="bi bi-arrow-up-right"></i>
-                        </span>
+                    <button class="mt-8 bg-lime-500 text-white px-6 py-3 rounded-full">
+                        Plexify is rated 4.5 / 5 average from 200 reviews on Google,
+                        Clutch!
                     </button>
                 </div>
 
-                <!-- Témoignage -->
-                <div class="lg:col-span-2 bg-gray-50 rounded-2xl overflow-hidden">
-                    <div class="flex flex-col lg:flex-row h-full">
-                        <!-- Texte -->
-                        <div class="p-10 flex flex-col justify-between flex-1">
-                            <div>
-                                <div class="text-yellow-500 text-2xl mb-6">
-                                    ★★★★★
+                <!-- Cartes -->
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                    <!-- Carte verte -->
+                    <div class="bg-green-900 text-white rounded-2xl p-10 flex flex-col justify-between">
+                        <div class="text-center">
+                            <h3 class="text-7xl font-light">4.5</h3>
+
+                            <p class="flex justify-center items-center gap-2 mt-3">
+                                Star Rating
+                                <img src="images/trustpilot-logo.png" alt="" class="h-6">
+                            </p>
+                        </div>
+
+                        <div class="text-center my-12">
+                            <p class="text-4xl font-semibold">
+                                10 Years Experience in
+                                Digital Marketing
+                            </p>
+                        </div>
+
+                        <button class="bg-white text-green-900 rounded-full py-3 px-4 flex items-center justify-between">
+                            <span>Rate Us on Trustpilot</span>
+
+                            <span class="bg-lime-400 w-12 h-12 rounded-full flex items-center justify-center">
+                                <i class="bi bi-arrow-up-right"></i>
+                            </span>
+                        </button>
+                    </div>
+
+                    <!-- Témoignage -->
+                    <div class="lg:col-span-2 bg-gray-50 rounded-2xl overflow-hidden">
+                        <div class="flex flex-col lg:flex-row h-full">
+                            <!-- Texte -->
+                            <div class="p-10 flex flex-col justify-between flex-1">
+                                <div>
+                                    <div class="text-yellow-500 text-2xl mb-6">
+                                        ★★★★★
+                                    </div>
+
+                                    <p class="text-3xl text-green-900 leading-relaxed">
+                                        This template has great documentation and support.
+                                        It's very flexible and has so many options to
+                                        implement to your website. I am happy that I
+                                        decided to buy it.
+                                    </p>
                                 </div>
 
-                                <p class="text-3xl text-green-900 leading-relaxed">
-                                    This template has great documentation and support.
-                                    It's very flexible and has so many options to
-                                    implement to your website. I am happy that I
-                                    decided to buy it.
+                                <div class="flex justify-end gap-8 mt-10">
+                                    <i class="bi bi-arrow-left text-3xl text-gray-400"></i>
+                                    <i class="bi bi-arrow-right text-3xl text-gray-400"></i>
+                                </div>
+                            </div>
+
+                            <!-- Image -->
+                            <div class="lg:w-80">
+                                <img src="images/3_2.png" alt="" class="w-full h-full object-cover">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--section contact-->
+            <section class="relative min-h-screen p-6">
+
+                <!-- Image -->
+                <div class="absolute inset-0 bg-[url('images/bg1.png')] bg-cover bg-center bg-fixed bg-no-repeat m-6 rounded-2xl">
+                </div>
+
+                <!-- Overlay -->
+                <div class="absolute inset-0 bg-green-950/70 m-6 rounded-2xl">
+                </div>
+
+                <!-- Contenu -->
+                <div class="relative z-10 h-full">
+
+                    <div class="grid lg:grid-cols-2 gap-10 p-10">
+
+                        <!-- Partie gauche -->
+                        <div>
+
+                            <h2 class="text-white text-5xl lg:text-7xl font-semibold leading-tight">
+                                Schedule Your
+                                Consultation Today
+                                Grow Faster
+                            </h2>
+
+                            <!-- Carte graphique -->
+                            <div class="mt-12 bg-white/10 border border-white/20 rounded-2xl p-8 backdrop-blur-sm">
+
+                                <img src="images/chart.png" alt="" class="w-full">
+
+                            </div>
+
+                        </div>
+
+                        <!-- Partie droite -->
+                        <div class="bg-white rounded-2xl p-10">
+                            <h2 class="text-5xl text-green-900 font-semibold mb-10">
+                                Let's connect
+                                <br>
+                                and Collaborate
+                            </h2>
+
+                            <form class="space-y-8">
+
+                                <div class="grid md:grid-cols-2 gap-8">
+
+                                    <input type="text" placeholder="Full Name"
+                                        class="border-b border-gray-300 py-3 outline-none">
+
+                                    <input type="email" placeholder="Email Address"
+                                        class="border-b border-gray-300 py-3 outline-none">
+
+                                    <input type="tel" placeholder="Phone Number"
+                                        class="border-b border-gray-300 py-3 outline-none">
+
+                                    <select class="border-b border-gray-300 py-3 outline-none bg-transparent">
+                                        <option>Choose a Option</option>
+                                    </select>
+
+                                </div>
+
+                                <textarea rows="5" placeholder="Write here"
+                                    class="w-full border-b border-gray-300 outline-none resize-none">
+                                </textarea>
+
+                                <button class="bg-lime-500 text-white px-8 py-3 rounded-full">
+                                    Send Message
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--section info 5-->
+            <section class="px-6 lg:px-10 py-20">
+
+                <!-- En-tête -->
+                <div class="flex justify-between items-center mb-10">
+
+                    <h2 class="text-5xl lg:text-4xl font-semibold text-green-900">
+                        Fresh Business
+                        <span class="text-lime-400">Tips</span>
+                    </h2>
+
+                    <button class="w-16 h-16 bg-lime-400 rounded-full flex items-center justify-center">
+                        <i class="bi bi-arrow-up-right text-3xl text-green-900"></i>
+                    </button>
+
+                </div>
+
+                <!-- Contenu -->
+                <div class="grid lg:grid-cols-[3fr_1fr] gap-8">
+
+                    <!-- Article principal -->
+                    <div class="bg-gray-50 rounded-3xl overflow-hidden">
+
+                        <div class="grid lg:grid-cols-2 h-full">
+
+                            <!-- Image -->
+                            <div>
+                                <img src="images/2_2.png" alt="" class="w-full h-full object-cover">
+                            </div>
+
+                            <!-- Texte -->
+                            <div class="p-8 flex flex-col justify-between">
+
+                                <div>
+
+                                    <span class="inline-block bg-lime-400 px-6 py-2 rounded-xl text-green-900">
+                                        Financial
+                                    </span>
+
+                                    <h3 class="text-2xl font-semibold text-green-900 mt-6 leading-tight">
+                                        How to Create a Profitable Business Budget That
+                                        Actually Works
+                                    </h3>
+
+                                    <p class="mt-6 text-gray-500 text-lg">
+                                        Build a smart business budget that supports growth,
+                                        controls spending, and maximizes long-term
+                                        profitability.
+                                    </p>
+
+                                </div>
+
+                                <div class="flex items-center justify-between mt-10">
+
+                                    <div class="flex gap-3 text-gray-500">
+                                        <span>15 Jun 2025</span>
+                                        <span>|</span>
+                                        <span>By Michael Reed</span>
+                                    </div>
+
+                                    <button class="w-14 h-14 border rounded-full flex items-center justify-center">
+                                        <i class="bi bi-arrow-right"></i>
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Latest News -->
+                    <div class="bg-gray-50 rounded-3xl p-8">
+
+                        <h3 class="text-2xl text-green-900 mb-8">
+                            Latest News
+                        </h3>
+
+                        <div class="space-y-8">
+
+                            <div class="border-b pb-6">
+                                <h4 class="text-xl text-green-900">
+                                    5 Financial Mistakes Small Business Owners Make—and
+                                    How to Avoid Them
+                                </h4>
+
+                                <p class="text-lime-500 mt-3">
+                                    22 Jun 2025
                                 </p>
                             </div>
 
-                            <div class="flex justify-end gap-8 mt-10">
-                                <i class="bi bi-arrow-left text-3xl text-gray-400"></i>
-                                <i class="bi bi-arrow-right text-3xl text-gray-400"></i>
-                            </div>
-                        </div>
-
-                        <!-- Image -->
-                        <div class="lg:w-80">
-                            <img src="images/3_2.png" alt="" class="w-full h-full object-cover">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!--section contact-->
-        <section class="relative min-h-screen p-6">
-
-            <!-- Image -->
-            <div class="absolute inset-0 bg-[url('images/bg1.png')] bg-cover bg-center bg-no-repeat m-6 rounded-2xl">
-            </div>
-
-            <!-- Overlay -->
-            <div class="absolute inset-0 bg-green-950/70 m-6 rounded-2xl">
-            </div>
-
-            <!-- Contenu -->
-            <div class="relative z-10 h-full">
-
-                <div class="grid lg:grid-cols-2 gap-10 p-10">
-
-                    <!-- Partie gauche -->
-                    <div>
-
-                        <h2 class="text-white text-5xl lg:text-7xl font-semibold leading-tight">
-                            Schedule Your
-                            Consultation Today
-                            Grow Faster
-                        </h2>
-
-                        <!-- Carte graphique -->
-                        <div class="mt-12 bg-white/10 border border-white/20 rounded-2xl p-8 backdrop-blur-sm">
-
-                            <img src="images/chart.png" alt="" class="w-full">
-
-                        </div>
-
-                    </div>
-
-                    <!-- Partie droite -->
-                    <div class="bg-white rounded-2xl p-10">
-                        <h2 class="text-5xl text-green-900 font-semibold mb-10">
-                            Let's connect
-                            <br>
-                            and Collaborate
-                        </h2>
-
-                        <form class="space-y-8">
-
-                            <div class="grid md:grid-cols-2 gap-8">
-
-                                <input type="text" placeholder="Full Name"
-                                    class="border-b border-gray-300 py-3 outline-none">
-
-                                <input type="email" placeholder="Email Address"
-                                    class="border-b border-gray-300 py-3 outline-none">
-
-                                <input type="tel" placeholder="Phone Number"
-                                    class="border-b border-gray-300 py-3 outline-none">
-
-                                <select class="border-b border-gray-300 py-3 outline-none bg-transparent">
-                                    <option>Choose a Option</option>
-                                </select>
-
-                            </div>
-
-                            <textarea rows="5" placeholder="Write here"
-                                class="w-full border-b border-gray-300 outline-none resize-none">
-                            </textarea>
-
-                            <button class="bg-green-500 text-white px-8 py-3 rounded-full">
-                                Send Message
-                            </button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!--section info 5-->
-        <section class="px-6 lg:px-20 py-20">
-
-            <!-- En-tête -->
-            <div class="flex justify-between items-center mb-10">
-
-                <h2 class="text-5xl lg:text-4xl font-semibold text-green-900">
-                    Fresh Business
-                    <span class="text-lime-400">Tips</span>
-                </h2>
-
-                <button class="w-16 h-16 bg-lime-400 rounded-full flex items-center justify-center">
-                    <i class="bi bi-arrow-up-right text-3xl text-green-900"></i>
-                </button>
-
-            </div>
-
-            <!-- Contenu -->
-            <div class="grid lg:grid-cols-[3fr_1fr] gap-8">
-
-                <!-- Article principal -->
-                <div class="bg-gray-50 rounded-3xl overflow-hidden">
-
-                    <div class="grid lg:grid-cols-2 h-full">
-
-                        <!-- Image -->
-                        <div>
-                            <img src="images/2_2.png" alt="" class="w-full h-full object-cover">
-                        </div>
-
-                        <!-- Texte -->
-                        <div class="p-8 flex flex-col justify-between">
-
-                            <div>
-
-                                <span class="inline-block bg-lime-400 px-6 py-2 rounded-xl text-green-900">
-                                    Financial
-                                </span>
-
-                                <h3 class="text-2xl font-semibold text-green-900 mt-6 leading-tight">
+                            <div class="border-b pb-6">
+                                <h4 class="text-xl text-green-900">
                                     How to Create a Profitable Business Budget That
                                     Actually Works
-                                </h3>
+                                </h4>
 
-                                <p class="mt-6 text-gray-500 text-lg">
-                                    Build a smart business budget that supports growth,
-                                    controls spending, and maximizes long-term
-                                    profitability.
+                                <p class="text-lime-500 mt-3">
+                                    20 Jun 2025
                                 </p>
-
                             </div>
 
-                            <div class="flex items-center justify-between mt-10">
+                            <div>
+                                <h4 class="text-xl text-green-900">
+                                    The Beginner's Guide to Understanding Your Business
+                                    Numbers
+                                </h4>
 
-                                <div class="flex gap-3 text-gray-500">
-                                    <span>15 Jun 2025</span>
-                                    <span>|</span>
-                                    <span>By Michael Reed</span>
-                                </div>
-
-                                <button class="w-14 h-14 border rounded-full flex items-center justify-center">
-                                    <i class="bi bi-arrow-right"></i>
-                                </button>
-
+                                <p class="text-lime-500 mt-3">
+                                    15 Jun 2025
+                                </p>
                             </div>
 
                         </div>
@@ -686,85 +812,94 @@
 
                 </div>
 
-                <!-- Latest News -->
-                <div class="bg-gray-50 rounded-3xl p-8">
+            </section>
 
-                    <h3 class="text-2xl text-green-900 mb-8">
-                        Latest News
-                    </h3>
+            <!--section localisation-->
+            <section class="mt-10 lg:px-10 bg-lime-400 mb-5">
+                <div class="grid grid-cols-1 lg:grid-cols-2 p-5 pt-20">
+                    <div>
+                        <h2 class="text-5xl text-white font-semibold">Ready to Build a More Profitable, Sustainable
+                            Business?</h2>
+                        <button
+                            class="bg-white text-green-900 rounded-full py-2 px-3 flex gap-5 mt-6 items-center justify-between">
+                            <span>Free Consultation</span>
 
-                    <div class="space-y-8">
-
-                        <div class="border-b pb-6">
-                            <h4 class="text-xl text-green-900">
-                                5 Financial Mistakes Small Business Owners Make—and
-                                How to Avoid Them
-                            </h4>
-
-                            <p class="text-lime-500 mt-3">
-                                22 Jun 2025
-                            </p>
-                        </div>
-
-                        <div class="border-b pb-6">
-                            <h4 class="text-xl text-green-900">
-                                How to Create a Profitable Business Budget That
-                                Actually Works
-                            </h4>
-
-                            <p class="text-lime-500 mt-3">
-                                20 Jun 2025
-                            </p>
-                        </div>
-
-                        <div>
-                            <h4 class="text-xl text-green-900">
-                                The Beginner's Guide to Understanding Your Business
-                                Numbers
-                            </h4>
-
-                            <p class="text-lime-500 mt-3">
-                                15 Jun 2025
-                            </p>
-                        </div>
-
+                            <span class="bg-lime-400 w-12 h-12 rounded-full flex items-center justify-center">
+                                <i class="bi bi-arrow-up-right"></i>
+                            </span>
+                        </button>
                     </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-        <!--section localisation-->
-        <section class="mt-10 lg:px-20 bg-lime-400 mb-5">
-            <div class="grid grid-cols-1 lg:grid-cols-2 p-5 pt-20">
-                <div>
-                    <h2 class="text-5xl text-white font-semibold">Ready to Build a More Profitable, Sustainable Business?</h2>
-                    <button class="bg-white text-green-900 rounded-full py-2 px-3 flex gap-5 mt-6 items-center justify-between">
-                        <span>Free Consultation</span>
-
-                        <span class="bg-lime-400 w-12 h-12 rounded-full flex items-center justify-center">
-                            <i class="bi bi-arrow-up-right"></i>
-                        </span>
-                    </button>
-                </div>
-                <div>
-                    <img src="images/map.png" alt="">
-                    <div class="flex justify-between items-center bg-green-950 p-5 -mb-5 rounded-tl-2xl rounded-tr-2xl">
-                        <p class="flex gap-3 text-white">
-                            <i class="bi bi-geo-alt text-lime-400"></i>
-                            123 Finance Lane, Growth City, ST 45678 USA
-                        </p>
-                        <a href="#" class="flex gap-3 text-lime-400 border-b">Get Map <i class="bi bi-arrow-up-right text-lime-400"></i></a>
+                    <div>
+                        <img src="images/map.png" alt="">
+                        <div class="flex justify-between items-center bg-green-950 p-5 -mb-5 rounded-tl-2xl rounded-tr-2xl">
+                            <p class="flex gap-3 text-white">
+                                <i class="bi bi-geo-alt text-lime-400"></i>
+                                123 Finance Lane, Growth City, ST 45678 USA
+                            </p>
+                            <a href="#" class="flex gap-3 text-lime-400 border-b">Get Map <i
+                                    class="bi bi-arrow-up-right text-lime-400"></i></a>
+                        </div>
                     </div>
                 </div>
+            </section>
+        </main>
+
+        <!--pied de page-->
+        <footer class="mt-10 lg:px-10 bg-white p-20">
+            <div class="lg:flex justify-between">
+                <div class="grid grid-cols-1 lg:grid-cols-4 gap-10">
+                    <div>
+                        <p>See our work</p>
+                        <a href="#"
+                            class="text-3xl font-semibold transition ease-in duration-150 hover:text-lime-400 hover:border-b">Portfolio</a>
+                    </div>
+                    <div>
+                        <p>How we do it</p>
+                        <a href="#"
+                            class="text-3xl font-semibold transition ease-in duration-150 hover:text-lime-400 hover:border-b">Process</a>
+                    </div>
+                    <div>
+                        <p>Who we are</p>
+                        <a href="#"
+                            class="text-3xl font-semibold transition ease-in duration-150 hover:text-lime-400 hover:border-b">About</a>
+                    </div>
+                    <div>
+                        <p>Get Started</p>
+                        <a href="#"
+                            class="text-3xl font-semibold transition ease-in duration-150 hover:text-lime-400 hover:border-b">Contact</a>
+                    </div>
+                </div>
+
+                <div>
+                    <p>Let’s work together</p>
+                    <p
+                        class="text-3xl font-semibold transition ease-in duration-150 hover:text-lime-400 hover:border-b cursor-pointer flex gap-8">
+                        Get In Touch <i
+                            class="bi bi-arrow-up-right bg-lime-400 rounded-full h-10 w-10 flex items-center justify-center text-xl"></i>
+                    </p>
+                </div>
             </div>
-        </section>
-    </main>
-
-    <!--pied de page-->
-    <footer></footer>
-</body>
-
+            <hr class="mt-20">
+            <!--lien reseau-->
+            <div class="lg:flex justify-between mt-6">
+                <div class="grid grid-cols-1 lg:grid-cols-4 gap-5">
+                    <div>
+                        <a href="#" class="transition ease-in hover:border-b">Instagram</a>
+                    </div>
+                    <div>
+                        <a href="#" class="transition ease-in hover:border-b">Facebook</a>
+                    </div>
+                    <div>
+                        <a href="#" class="transition ease-in hover:border-b">LinkedIn</a>
+                    </div>
+                    <div>
+                        <a href="#" class="transition ease-in hover:border-b">x</a>
+                    </div>
+                </div>
+                <div>
+                    <p>© Copyright ©2025 <a href="#" class="text-lime-400">Plexify</a> .All Rights Reserved</p>
+                </div>
+            </div>
+        </footer>
+    </body>
 </html>
